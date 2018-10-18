@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,26 +33,31 @@ public class MainActivity extends AppCompatActivity {
         remoteControllerView.setRemoteControllerClickListener(new RemoteControllerView.OnRemoteControllerClickListener() {
             @Override
             public void topClick() {
+                Log.e("HLA","topClick");
                 Toast.makeText(MainActivity.this, "topClick", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void leftClick() {
+                Log.e("HLA","leftClick");
                 Toast.makeText(MainActivity.this, "leftClick", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void rightClick() {
+                Log.e("HLA","topClick");
                 Toast.makeText(MainActivity.this, "rightClick", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void bottomClick() {
+                Log.e("HLA","bottomClick");
                 Toast.makeText(MainActivity.this, "bottomClick", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void centerOkClick() {
+                Log.e("HLA","centerOkClick");
                 Toast.makeText(MainActivity.this, "centerOkClick", Toast.LENGTH_SHORT).show();
             }
         });
